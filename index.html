@@ -1,425 +1,70 @@
-!-- =========================
- NEXT LEVEL FEATURES ADD
-========================= --
-
-!-- ADD THIS INSIDE head --
-
-link rel=stylesheet href=httpscdnjs.cloudflare.comajaxlibsfont-awesome6.5.1cssall.min.css
-
-style
-
- DARK MODE BUTTON 
-.theme-toggle{
-  positionfixed;
-  left20px;
-  bottom20px;
-  width55px;
-  height55px;
-  background#0f172a;
-  colorwhite;
-  border-radius50%;
-  displayflex;
-  align-itemscenter;
-  justify-contentcenter;
-  cursorpointer;
-  z-index999;
-  font-size22px;
-  box-shadow0 5px 15px rgba(0,0,0,0.3);
-}
-
- DARK MODE 
-.dark-mode{
-  background#020617;
-  colorwhite;
-}
-
-.dark-mode nav{
-  background#0f172acc;
-}
-
-.dark-mode .card{
-  background#1e293b;
-  colorwhite;
-}
-
-.dark-mode footer{
-  background#000;
-}
-
- TYPING TEXT 
-.typing{
-  color#facc15;
-  font-weightbold;
-  border-right3px solid white;
-  white-spacenowrap;
-  overflowhidden;
-  animationblink 0.7s infinite;
-}
-
-@keyframes blink{
-  50%{
-    border-colortransparent;
-  }
-}
-
- SKILL BAR 
-.skill{
-  margin-bottom20px;
-}
-
-.skill p{
-  margin-bottom8px;
-  font-weightbold;
-}
-
-.skill-bar{
-  width100%;
-  background#cbd5e1;
-  border-radius10px;
-  overflowhidden;
-}
-
-.skill-fill{
-  height12px;
-  background#2563eb;
-  width0;
-  animationfillAnimation 3s forwards;
-}
-
-@keyframes fillAnimation{
-  to{
-    width100%;
-  }
-}
-
- TESTIMONIAL 
-.testimonial{
-  text-aligncenter;
-}
-
-.testimonial img{
-  width80px;
-  height80px;
-  border-radius50%;
-  margin-bottom15px;
-}
-
- CHAT BOT 
-.chatbot{
-  positionfixed;
-  bottom100px;
-  right20px;
-  width300px;
-  backgroundwhite;
-  border-radius15px;
-  box-shadow0 5px 20px rgba(0,0,0,0.2);
-  overflowhidden;
-  displaynone;
-  z-index9999;
-}
-
-.chat-header{
-  background#2563eb;
-  colorwhite;
-  padding15px;
-  font-weightbold;
-}
-
-.chat-body{
-  padding15px;
-  font-size14px;
-}
-
-.chat-btn{
-  positionfixed;
-  bottom90px;
-  left20px;
-  width60px;
-  height60px;
-  background#2563eb;
-  colorwhite;
-  border-radius50%;
-  displayflex;
-  justify-contentcenter;
-  align-itemscenter;
-  font-size26px;
-  cursorpointer;
-  z-index999;
-}
-
- GLASS EFFECT 
-.glass{
-  backgroundrgba(255,255,255,0.15);
-  backdrop-filterblur(12px);
-  border1px solid rgba(255,255,255,0.2);
-}
-
- CONTACT FORM 
-.contact-form input,
-.contact-form textarea{
-  width100%;
-  padding12px;
-  margin-bottom15px;
-  bordernone;
-  border-radius10px;
-  background#f1f5f9;
-}
-
-.contact-form button{
-  padding12px 25px;
-  bordernone;
-  background#2563eb;
-  colorwhite;
-  border-radius10px;
-  cursorpointer;
-  font-weightbold;
-}
-
-.dark-mode .contact-form input,
-.dark-mode .contact-form textarea{
-  background#334155;
-  colorwhite;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-style
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Ariful Portfolio</title>
 
-!-- =========================
- HERO SECTION CHANGE
-========================= --
+  <style>
 
-!-- REPLACE HERO p WITH THIS --
+    body{
+      margin:0;
+      padding:0;
+      font-family:Arial, sans-serif;
+      background:#0f172a;
+      color:white;
+      text-align:center;
+    }
 
-p class=typing id=typing-textp
+    .hero{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
 
+    h1{
+      font-size:60px;
+      margin-bottom:10px;
+    }
 
-!-- =========================
- ADD SKILLS SECTION
-========================= --
+    p{
+      font-size:24px;
+      margin-bottom:20px;
+    }
 
-section id=skills class=hidden
+    .btn{
+      background:#2563eb;
+      color:white;
+      padding:14px 30px;
+      text-decoration:none;
+      border-radius:10px;
+      font-size:18px;
+    }
 
-  h2My Skillsh2
+    .btn:hover{
+      background:#1d4ed8;
+    }
 
-  div class=card glass
+  </style>
 
-    div class=skill
-      pSEO Optimizationp
-      div class=skill-bar
-        div class=skill-fill style=max-width95%;div
-      div
-    div
+</head>
 
-    div class=skill
-      pLocal SEO & GBPp
-      div class=skill-bar
-        div class=skill-fill style=max-width92%;div
-      div
-    div
+<body>
 
-    div class=skill
-      pWordPress Developmentp
-      div class=skill-bar
-        div class=skill-fill style=max-width90%;div
-      div
-    div
+  <div class="hero">
 
-  div
+    <h1>Hi, I'm Ariful</h1>
 
-section
+    <p>Web Developer</p>
 
+    <a href="#" class="btn">Contact Me</a>
 
-!-- =========================
- TESTIMONIAL SECTION
-========================= --
+  </div>
 
-section id=testimonials class=hidden
+</body>
 
-  h2Client Testimonialsh2
-
-  div class=grid
-
-    div class=card testimonial glass
-
-      img src=httpsi.pravatar.cc100img=1
-
-      h3John Smithh3
-
-      p
-        Amazing SEO service! My business ranking improved quickly.
-      p
-
-    div
-
-    div class=card testimonial glass
-
-      img src=httpsi.pravatar.cc100img=2
-
-      h3Michaelh3
-
-      p
-        Professional Local SEO expert. Highly recommended.
-      p
-
-    div
-
-    div class=card testimonial glass
-
-      img src=httpsi.pravatar.cc100img=3
-
-      h3Sarahh3
-
-      p
-        Excellent communication and great results.
-      p
-
-    div
-
-  div
-
-section
-
-
-!-- =========================
- CONTACT FORM SECTION
-========================= --
-
-section id=contact-form class=hidden
-
-  h2Send Messageh2
-
-  div class=card glass
-
-    form class=contact-form
-
-      input type=text placeholder=Your Name required
-
-      input type=email placeholder=Your Email required
-
-      textarea rows=5 placeholder=Your Messagetextarea
-
-      button type=submitSend Messagebutton
-
-    form
-
-  div
-
-section
-
-
-!-- =========================
- DARK MODE BUTTON
-========================= --
-
-div class=theme-toggle onclick=toggleTheme()
-
-  i class=fa-solid fa-mooni
-
-div
-
-
-!-- =========================
- CHAT BOT
-========================= --
-
-div class=chat-btn onclick=toggleChat()
-
-  i class=fa-solid fa-commenti
-
-div
-
-div class=chatbot id=chatbot
-
-  div class=chat-header
-    Live Chat
-  div
-
-  div class=chat-body
-    Hello 👋 brbr
-    Need SEO or Local SEO Service brbr
-    Contact me on WhatsApp
-    brbr
-
-    a href=httpswa.me8801621577580 target=_blank
-      Chat on WhatsApp
-    a
-
-  div
-
-div
-
-
-!-- =========================
- ADD BEFORE body
-========================= --
-
-script
-
- TYPING EFFECT 
-
-const texts=[
-SEO Expert,
-Digital Marketing Specialist,
-Local SEO Professional,
-WordPress Developer
-];
-
-let count=0;
-let index=0;
-let currentText=;
-let letter=;
-
-(function type(){
-
-  if(count===texts.length){
-    count=0;
-  }
-
-  currentText=texts[count];
-
-  letter=currentText.slice(0,++index);
-
-  document.getElementById(typing-text).textContent=letter;
-
-  if(letter.length===currentText.length){
-
-    count++;
-    index=0;
-
-    setTimeout(type,1000);
-
-  }else{
-
-    setTimeout(type,120);
-
-  }
-
-})();
-
- DARK MODE 
-
-function toggleTheme(){
-
-  document.body.classList.toggle(dark-mode);
-
-}
-
- CHAT BOT 
-
-function toggleChat(){
-
-  const chatbot=document.getElementById(chatbot);
-
-  if(chatbot.style.display===block){
-
-    chatbot.style.display=none;
-
-  }else{
-
-    chatbot.style.display=block;
-
-  }
-
-}
-
-script
+</html>
